@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Pad</title>
+	<style>
+	.blackbg{
+		background-color:black;
+
+	}
+	.redbg{
+		background-color: red;
+	}
+
+	.yellowbg{
+		background-color: yellow;
+	}
+
+	
+</style></head>
+<body id="image">
+	<script type="text/javascript">
+	var bgpro = prompt("Enter a color for your background: ");
+	switch(bgpro.toLowerCase()){
+		case "black":
+		var bd = "blackbg";
+		document.getElementById("image").
+		setAttribute("class",bd);
+		setTimeout(function() {
+        window.location.reload(1);
+      }, 3000);
+	break;
+
+	case "red":
+		var bd = "redbg";
+		document.getElementById("image").
+		setAttribute("class",bd);
+		setTimeout(function() {
+        window.location.reload(1);
+      }, 3000);
+	break;
+
+	case "yellow":
+		var bd = "yellowbg";
+		document.getElementById("image").
+		setAttribute("class",bd);
+		setTimeout(function() {
+        window.location.reload(1);
+      }, 3000);
+	break;
+
+	default:
+		alert("No background color entered.");
+	}
+
+	</script>
+
+</body>
+</html>
